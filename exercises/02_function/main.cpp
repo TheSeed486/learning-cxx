@@ -5,7 +5,9 @@
 // NOTICE: 补充由内而外读法的机翻解释 <https://learn.microsoft.com/zh-cn/cpp/c-language/interpreting-more-complex-declarators?view=msvc-170>
 
 // TODO: 在这里声明函数
-
+int add(auto a, auto b){
+    return a + b;
+};
 int main(int argc, char **argv) {
     ASSERT(add(123, 456) == 123 + 456, "add(123, 456) should be 123 + 456");
 
